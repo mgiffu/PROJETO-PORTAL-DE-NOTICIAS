@@ -1,0 +1,24 @@
+#primary {
+  padding-block: 20px; /* para definir o espaço acima e abaixo do bloco */
+  
+  div {
+    display: flex;
+    align-items: center; /* para alinhar os icones e textos no centro da linha */
+    gap: 8px; /* para espaçar os icones dos textos */
+  }
+  
+  div:nth-child(2) { /* nestin css (nesse caso você não precisa criar um novo primary para pegar uma <div> filho */
+    margin-inline: auto; /* para deixar o logo no automática, margin-inline autera o eixo x */
+  }
+
+  div:nth-child(3) {
+    justify-self: end; /* para colocar somente o icone de busca no canto esquerdo */
+  }
+}
+
+#secondary {
+  padding-block: 14px;
+  border: solid 1px var(--stroke-color); /* para adiconar as bordas */
+  border-inline: none; /* para remover as bordas dos lados direito e esquerde, deixanso as de cima e baixo */
+  justify-content: space-between; /* para aplicar o espaçamento entre os elementos */
+}
