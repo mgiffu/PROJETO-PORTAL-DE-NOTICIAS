@@ -19,9 +19,17 @@
       180deg, /* primeiro indica a direção em graus */
       transparent 0%, /* indica a transparencia iniciando em 0% */
       #020617 100% /* indica a cor que será utilizada e transparencia termina em 100% */
-
     );
-    
-
   }
+
+  figcaption {
+    position: absolute; /* para que o texto sobreponha a imagem */
+    bottom: 0; /* para o texto fique posicionado na parte de baixo da imagem */
+    padding: 24px;
+
+    h2 {
+      margin-top: 8px;
+    }
+  }
+
 }
