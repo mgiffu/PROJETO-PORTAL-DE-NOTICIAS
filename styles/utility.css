@@ -1,0 +1,17 @@
+/* utility-first (é utilizdo quando temos uma classe que irá fazer apenas uma coisa) */
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column; /* para inverter o eixo do grid para colunas */
+}
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr; /* para que os elementos que utilizarem essa classe sejam fragmentados em duas frações iguais no grid */
+}
+
+.gap-16 {
+  gap: 16px; /* para que os elementos que utilizarem essa classe apresentem um gap de 16px */
+}

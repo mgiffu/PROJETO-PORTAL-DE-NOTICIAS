@@ -1,0 +1,7 @@
+#featured {
+  img {
+    height: 100%; /* resolve o problema de espaços sobrando no grid, porem estica as imagens */
+    object-fit: cover; /* resolve o problema das imagens esticadas */
+    border-radius: 4px; /* para arrendondar levemente as bordas as imagens */
+  };
+}
