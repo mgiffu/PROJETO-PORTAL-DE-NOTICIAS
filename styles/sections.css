@@ -5,3 +5,23 @@
     border-radius: 4px; /* para arrendondar levemente as bordas as imagens */
   };
 }
+
+.card { /* para fazer o degrade na imagem do robô */
+  border-radius: 4px; /* para arrendondar levemente as bordas as imagens */
+  overflow: hidden; /* nesse caso para que o arredondamento funcione é preciso aplicar overflow(transbordamento) indicando que tudo que passar da caixa sera escondido (hidden)*/
+  position: relative; /* para que o posicionamento do novo elemento fique relativo ao card (imagendo robô) */
+  &::before { /* o & representa a palavra "card", pq esta dentro do card . Esse elemente irá criar um novo elemento antes da imagem do robô*/
+    content: ""; /* para criar um elento é preciso que ele tenha um conteudo, posião e cor de fundo para viluzar melhor onde ele se encontra */
+    position: absolute; /* indica em qual área da página o novo elemente estará */
+    inset: 0;
+    top: 50%; /* para ao card começar a partir da metade da imagem */
+    background: linear-gradient( /* para criar o degrade */
+      180deg, /* primeiro indica a direção em graus */
+      transparent 0%, /* indica a transparencia iniciando em 0% */
+      #020617 100% /* indica a cor que será utilizada e transparencia termina em 100% */
+
+    );
+    
+
+  }
+}
