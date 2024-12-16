@@ -30,6 +30,10 @@
     h2 {
       margin-top: 8px;
     }
+
+    &:has(.text-lg) { /* o "&:has" indica que o elemente, dentro de figcaption, que tiver o .text-lg também vai ter um paddind de 12px */
+      padding: 12px;
+    }
   }
 
 }
