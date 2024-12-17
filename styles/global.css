@@ -51,8 +51,16 @@ img {
 }
 
 main {
-  margin-top: 40px;
-  gap: 80px; /* para dar ume espaço entre featured e weekly */
+  margin-block: 40px;
+  row-gap: 80px; /* para dar ume espaço entre featured e weekly */
+  column-gap: 32px;
+
+  grid-template-columns: 2fr 1.3fr;
+
+  grid-template-areas: 
+  "featured featured"
+  "weekly weekly"
+  "ai aside";
 }
 
 .content-tag {
